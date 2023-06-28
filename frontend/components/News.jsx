@@ -17,7 +17,7 @@ const News = (props) => {
     }, [page]);
 
     const updateNews = async () => {
-        const url = `http://localhost:3000/api/news?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        const url = `https://newspulseapi.onrender.com/api/news?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
         setLoading(true);
 
         try {
